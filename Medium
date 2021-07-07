@@ -1,26 +1,40 @@
-num = input("Enter a number and see the month: ")
+def num():
+  valid = True 
 
-if num == "1":
- print("January")
-elif num == "2":
-  print("February")
-elif num == "3":
-  print("March")
-elif num == "4":
-  print("April")
-elif num == "5":
-  print("May")
-elif num == "6":
-  print("June")
-elif num == "7":
-  print("July")
-elif num == "8":
-  print("August")
-elif num == "9":
-  print("September")
-elif num == "10":
-  print("October")
-elif num == "11":
-  print("November")
-elif num == "12":
-  print("December")
+  num = input("Enter a number and see the month: ")
+
+  while not valid:
+    while num not in [num > 12, num < 1]:
+      num = input("That number is invalid! Please choose a number 1-12: ")
+
+    num = int(num) - 1
+
+
+  if num == "1":
+    print("January")
+  elif num == "2":
+    print("February")
+  elif num == "3":
+    print("March")
+  elif num == "4":
+    print("April")
+  elif num == "5":
+    print("May")
+  elif num == "6":
+    print("June")
+  elif num == "7":
+    print("July")
+  elif num == "8":
+    print("August")
+  elif num == "9":
+    print("September")
+  elif num == "10":
+    print("October")
+  elif num == "11":
+    print("November")
+  elif num == "12":
+    print("December")
+  else: 
+    valid = False
+
+num()
