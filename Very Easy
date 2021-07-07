@@ -1,0 +1,11 @@
+def minimum(a, b):
+      
+    if a <= b:
+        return a
+    else:
+        return b
+      
+# Driver code
+a = 3
+b = 6
+print(minimum(a, b))
