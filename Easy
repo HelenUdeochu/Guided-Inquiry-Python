@@ -1,0 +1,10 @@
+students_info = {
+    'Ogbonna Nephi': 18, 
+    'Udeochu Helen' : 16,
+    'Okereke Uzunma' : 14
+ }
+
+def giveinfo(name):
+  return (f' Hello, my name is {name} and i am {students_info[name]} years old')
+
+giveinfo('Ogbonna Nephi')
